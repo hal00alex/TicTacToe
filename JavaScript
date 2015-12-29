@@ -1,0 +1,105 @@
+//list of occupied spaces 
+var occupied = []; 
+//varaible for o 
+var oo = 0; 
+
+//function for each button
+function one(){
+ document.getElementById("1").value = "X";
+  occupied.push(1);  
+  ooo(); 
+}
+
+function two(){
+ document.getElementById("2").value = "X";
+  occupied.push(2);  
+  ooo(); 
+}
+
+function three(){
+ document.getElementById("3").value = "X";
+  occupied.push(3);  
+  ooo(); 
+}
+
+function four(){
+ document.getElementById("4").value = "X";
+  occupied.push(4);  
+  ooo(); 
+}
+
+function five(){
+ document.getElementById("5").value = "X";
+  occupied.push(5);  
+  ooo(); 
+}
+
+function six(){
+ document.getElementById("6").value = "X";
+  occupied.push(6);  
+  ooo(); 
+}
+
+function seven(){
+ document.getElementById("7").value = "X";
+  occupied.push(7);  
+  ooo(); 
+}
+
+function eight(){
+ document.getElementById("8").value = "X";
+  occupied.push(8);  
+  ooo(); 
+}
+
+function nine(){
+ document.getElementById("9").value = "X";
+  occupied.push(9);  
+  ooo(); 
+}
+
+function ooo(){
+  //pick a random number to put an O
+  oo = Math.floor(Math.random()*9)+1; 
+  
+  //check to see if occupied
+ while(occupied.indexOf(oo)>-1){
+     oo = Math.floor(Math.random()*9)+1;  
+  }
+  
+  //push new number to list
+  occupied.push(oo);
+  if (oo == 1){
+ document.getElementById("1").value = "O";
+  }
+  if (oo == 2){
+ document.getElementById("2").value = "O";
+  }
+  
+   if (oo == 3){
+ document.getElementById("3").value = "O";
+  }
+  
+   if (oo == 4){
+ document.getElementById("4").value = "O";
+  }
+  
+     if (oo == 5){
+ document.getElementById("5").value = "O";
+  }
+  
+     if (oo == 6){
+ document.getElementById("6").value = "O";
+  }
+  
+     if (oo == 7){
+ document.getElementById("7").value = "O";
+  }
+     if (oo == 8){
+ document.getElementById("8").value = "O";
+  }
+  
+     if (oo == 9){
+ document.getElementById("9").value = "O";
+  }
+}
